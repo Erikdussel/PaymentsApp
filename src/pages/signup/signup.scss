@@ -1,0 +1,14 @@
+page-signup {
+	#signup-page {
+		background: color($colors, dark);
+	}
+	#signup-card {
+		background: color($colors, dark);
+		margin-top: 20vh;
+		color: color($colors, primary);
+	}
+	#subscribe {
+		margin-top: 1%;
+		color: color($colors, light);
+	}
+}

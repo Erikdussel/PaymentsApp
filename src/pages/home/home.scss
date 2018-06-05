@@ -1,3 +1,21 @@
 page-home {
+	#home-badge {
+		padding: 0.5vh 3vh 0.5vh 3vh;
+		background: color($colors, primary);
+		color: color($colors, dark);
+	}
+	#home-header {
+		color: color($colors, primary);
+	}
+	#home-row {
+		background: white;
+	}
+	#home-background-image {
+		background: color($colors, dark);
+		color: color($colors, light);
+	}
 
+	#home-news {
+		margin-top: 2vh
+	}
 }

@@ -1,0 +1,16 @@
+page-welcome {
+	#welcome {
+		background: color($colors, dark);
+		h1 {
+			font-size: 52px;
+			margin-top: 50px;
+			color: color($colors, primary);
+		}
+		p {
+			font-size: 18px;
+			color: white
+		}
+		padding-top: 10vh;
+	}
+
+}

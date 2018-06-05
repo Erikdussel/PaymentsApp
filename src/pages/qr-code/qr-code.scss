@@ -1,0 +1,16 @@
+page-qr-code {
+	#navbar-title {
+		color: color($colors, primary);
+	}
+	#qr-content {
+		background-color: color($colors, dark);
+	}
+	#qr-input {
+		background-color: color($colors, light);
+	}
+	#qr-row {
+		color: color($colors, primary);
+		margin-top: 10vh;
+		margin-bottom: 10vh;
+	}
+}

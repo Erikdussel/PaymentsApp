@@ -1,18 +1,56 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle color="primary">
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<ion-content id="home-background-image" padding>
+      <ion-grid>
+        <ion-row id="home-header" text-center padding>
+          <ion-col col-1>
+          </ion-col>
+          <ion-col col-10>
+            <h2><b>WELCOME BACK <br> USER NAME!</b></h2>
+          </ion-col>
+          <ion-col col-1>
+          </ion-col>
+        </ion-row>
+        <ion-row id="home-card-title">
+          <ion-col text-center>
+            <i>NEW SINCE LAST LOGIN</i>
+          </ion-col>
+        </ion-row>
+        <ion-row id="home-news" padding>
+          <ion-col col-2>
+            <ion-badge id="home-badge">
+              9
+            </ion-badge>
+          </ion-col>
+          <ion-col col-10 text-right>
+            NEW TRANSACTIONS!
+          </ion-col>
+        </ion-row>
+        <ion-row id="home-news" padding>
+          <ion-col col-2>
+            <ion-badge id="home-badge">
+              0
+            </ion-badge>
+          </ion-col>
+          <ion-col col-10 text-right>
+            NO RESELLER TRANSACTIONS 
+          </ion-col>
+        </ion-row>
+        <ion-row id="home-news" padding>
+          <ion-col col-2>
+            <ion-badge id="home-badge">
+              4
+            </ion-badge>
+          </ion-col>
+          <ion-col col-10 text-right>
+            DAYS UNTIL NEXT PAYOUT
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 </ion-content>

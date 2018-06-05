@@ -1,18 +1,29 @@
 <ion-menu [content]="content">
   <ion-header>
-    <ion-toolbar>
+    <ion-toolbar color="dark">
       <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <ion-content>
+  <ion-content id="sidemenu-content">
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
+      <ion-item color="dark" text-center>
+        <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" color="dark">
+          <ion-row>
+            <ion-col col-2>
+              <ion-icon name={{p.icon}}></ion-icon>
+            </ion-col>
+            <ion-col col-6>
+              {{p.title}}
+            </ion-col>
+          </ion-row>
+        </button>
+      </ion-item>
     </ion-list>
   </ion-content>
-
+  <ion-footer>
+    <button style="margin-bottom: 5vh;" menuClose ion-button full color="primary" (click)="logout()">LOG OUT</button>
+  </ion-footer>
 </ion-menu>
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->

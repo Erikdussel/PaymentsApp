@@ -1,0 +1,139 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>TRANSACTIONS</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content id="transactions-background-image">
+		<ion-grid id="transactions-content">
+			<ion-row id="transactions-header">
+				<ion-col col-1>
+				</ion-col>
+				<ion-col col-2>
+					STATUS
+				</ion-col>
+				<ion-col text-center col-3>
+					AMOUNT
+				</ion-col>
+				<ion-col col-3>
+					METHOD
+				</ion-col>
+				<ion-col col-3>
+					DETAILS
+				</ion-col>
+			</ion-row>
+			<ion-row id="transactions-row">
+				<ion-col col-1>
+				</ion-col>
+				<ion-col col-1 style="padding-top: 3%;">
+					<ion-icon name="clock" color="secondary"></ion-icon>
+				</ion-col>
+				<ion-col col-1>
+				</ion-col>
+				<ion-col col-3 text-center style="padding-top: 3%;">
+					€44,95
+				</ion-col>
+				<ion-col col-1>
+				</ion-col>
+				<ion-col col-2>
+					<img src="../assets/imgs/bancontact.png" style="max-height: 32px;max-width: 32px;" />
+				</ion-col>
+				<ion-col col-1>
+				</ion-col>
+				<ion-col col-2 style="padding-top: 3%;" (click)="openModal()">
+					<ion-icon name="arrow-forward"></ion-icon>
+				</ion-col>
+			</ion-row>
+			<ion-row id="transactions-row">
+				<ion-col col-1>
+				</ion-col>
+				<ion-col col-1 style="padding-top: 3%;">
+					<ion-icon name="clock" color="secondary"></ion-icon>
+				</ion-col>
+				<ion-col col-1>
+				</ion-col>
+				<ion-col col-3 text-center style="padding-top: 3%;">
+					€24,95
+				</ion-col>
+				<ion-col col-1>
+				</ion-col>
+				<ion-col col-2>
+					<img src="../assets/imgs/ideal.png" style="max-height: 28px;max-width: 28px;" />
+				</ion-col>
+				<ion-col col-1>
+				</ion-col>
+				<ion-col col-2 style="padding-top: 3%;" (click)="openModal()">
+					<ion-icon name="arrow-forward"></ion-icon>
+				</ion-col>
+			</ion-row>
+			<ion-row id="transactions-row">
+				<ion-col col-1>
+				</ion-col>
+				<ion-col col-1>
+					<ion-icon name="clock" color="pending"></ion-icon>
+				</ion-col>
+				<ion-col col-1>
+				</ion-col>
+				<ion-col text-center col-3>
+					€129,95
+				</ion-col>
+				<ion-col col-1>
+				</ion-col>
+				<ion-col col-2>
+					<img src="../assets/imgs/creditcard.png" style="max-height: 32px;max-width: 32px;" />
+				</ion-col>
+				<ion-col col-1>
+				</ion-col>
+				<ion-col col-2 style="padding-top: 3%;" (click)="openModal()">
+					<ion-icon name="arrow-forward" ></ion-icon>
+				</ion-col>
+			</ion-row>
+			<ion-row id="transactions-row">
+				<ion-col col-1>
+				</ion-col>
+				<ion-col col-1 style="padding-top: 3%;">
+					<ion-icon name="clock" color="secondary"></ion-icon>
+				</ion-col>
+				<ion-col col-1>
+				</ion-col>				
+				<ion-col col-3 text-center style="padding-top: 3%;">
+					€349,95
+				</ion-col>
+				<ion-col col-1>
+				</ion-col>
+				<ion-col col-2>					
+					<img src="../assets/imgs/ideal.png" style="max-height: 28px;max-width: 28px;" />
+				</ion-col>
+				<ion-col col-1>
+				</ion-col>
+				<ion-col col-2 style="padding-top: 3%;" (click)="openModal()">
+					<ion-icon name="arrow-forward"></ion-icon>
+				</ion-col>
+			</ion-row>
+			<ion-row id="transactions-row">
+				<ion-col col-1>
+				</ion-col>
+				<ion-col col-1 style="padding-top: 3%;">
+					<ion-icon name="clock" color="danger"></ion-icon>
+				</ion-col>
+				<ion-col col-1>
+				</ion-col>
+				<ion-col col-3 text-center style="padding-top: 3%;">
+					€14,95
+				</ion-col>
+				<ion-col col-1>
+				</ion-col>
+				<ion-col col-2>
+					<img src="../assets/imgs/ideal.png" style="max-height: 28px;max-width: 28px;" />
+				</ion-col>
+				<ion-col col-1>
+				</ion-col>
+				<ion-col col-2 style="padding-top: 3%;" (click)="openModal()">
+					<ion-icon name="arrow-forward"></ion-icon>
+				</ion-col>
+			</ion-row>
+		</ion-grid>
+</ion-content>

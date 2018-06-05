@@ -1,0 +1,19 @@
+page-resellers {
+	#navbar-title {
+		color: color($colors, primary);
+	}
+	#resellers-background {
+		background-color: color($colors, dark);
+	}
+	#resellers-row {
+		background-color: color($colors, light);
+		padding-top: 8vh;
+		padding-bottom: 8vh;
+	}
+	#resellers-header {
+		background: color($colors, primary);
+		color: white;
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+}

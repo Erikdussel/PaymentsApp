@@ -1,0 +1,175 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>PROFILE</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content id="profile-background-image">
+		<ion-grid padding>
+			<ion-row>
+				<ion-col col-3>
+				</ion-col>
+				<ion-col col-6>
+					<ion-avatar>
+						<img id="profile-avatar" src='../assets/imgs/silhoutte.png' >
+					</ion-avatar>
+				</ion-col>
+				<ion-col col-3>
+				</ion-col>
+			</ion-row>
+				<ion-row style="padding-top: 5vh;">
+					<ion-col text-center>
+						<h2>USER NAME</h2>
+					</ion-col>
+				</ion-row>
+				<ion-row id="profile-row">
+					<ion-col col-4>
+						EMAIL:
+					</ion-col>
+					<ion-col col-8 text-right>
+						user@mail.com
+					</ion-col>
+				</ion-row>
+				<ion-row id="profile-row">
+					<ion-col col-4>
+						CLIENT ID:
+					</ion-col>
+					<ion-col col-8 text-right>
+						#103725
+					</ion-col>
+				</ion-row>
+				<ion-row id="profile-row">
+					<ion-col col-8>
+						CURRENT BALANCE:
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col>
+						<ion-item id="saldo"text-right>
+							<h1>€1337,00</h1>
+						</ion-item>
+					</ion-col>
+				</ion-row>
+				<ion-row id="profile-row">
+					<ion-col col-6>
+						PAYOUT INTERVAL:
+					</ion-col>
+					<ion-col col-6 text-right>
+						WEEKLY
+					</ion-col>
+				</ion-row>
+				<ion-row style="margin-top: 5vh;">
+					<ion-col>
+						<button ion-button (click)="editProfile()" full color="primary">EDIT ACCOUNT SETTINGS</button>
+					</ion-col>
+				</ion-row>
+				<ion-row id="payment-methods">
+					<ion-col text-center>
+						<h2>PAYMENT METHODS</h2>
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col>
+						<button ion-button (click)="togglePayments()" full color="primary">
+							VIEW
+						</button>
+					</ion-col>
+				</ion-row>
+		</ion-grid>
+      	<ion-grid id="payment-methods-container">
+			<ion-item id="profile-row">
+				<ion-row id="payment-icon">
+					<ion-col col-2>
+						<img style="height:100%" src="../assets/imgs/ideal.png" />
+					</ion-col>
+					<ion-col col-4 style="padding-top: 4%;">
+						iDEAL
+					</ion-col>
+					<ion-col col-6 text-right style="padding-top: 4%">
+						<ion-badge color="secondary" id="profile-badge-active">
+							active
+						</ion-badge>
+					</ion-col>
+				</ion-row>
+			</ion-item>
+			<ion-item id="profile-row">
+				<ion-row>
+					<ion-col col-2>
+						<img src="../assets/imgs/bancontact.png" />
+					</ion-col>
+					<ion-col col-4 style="padding-top: 4%;">
+						Bancontact
+					</ion-col>
+					<ion-col col-6 text-right style="padding-top: 4%">
+						<ion-badge color="danger" id="profile-badge-inactive">
+							inactive
+						</ion-badge>
+					</ion-col>
+				</ion-row>
+			</ion-item>
+			<ion-item id="profile-row">
+				<ion-row>
+					<ion-col col-2>
+						<img src="../assets/imgs/creditcard.png" />
+					</ion-col>
+					<ion-col col-4>
+						Credit Card
+					</ion-col>
+					<ion-col col-6 text-right>
+						<ion-badge color="secondary" id="profile-badge-active">
+							active
+						</ion-badge>
+					</ion-col>
+				</ion-row>
+			</ion-item>
+			<ion-item id="profile-row">
+				<ion-row>
+					<ion-col col-2>
+						<img src="../assets/imgs/paypal.jpg" />
+					</ion-col>
+					<ion-col col-4 style="padding-top: 3%;">
+						PayPal
+					</ion-col>
+					<ion-col col-6 text-right style="padding-top: 3%">
+						<ion-badge color="secondary" id="profile-badge-active">
+							active
+						</ion-badge>
+					</ion-col>
+				</ion-row>
+			</ion-item>
+			<ion-item id="profile-row">
+				<ion-row>
+					<ion-col col-2>
+						<img style="max-height: 32px; max-width: 32px;" src="../assets/imgs/bitcoin.svg" />
+					</ion-col>
+					<ion-col col-4 style="padding-top: 3%;">
+						BitCoin
+					</ion-col>
+					<ion-col col-6 text-right text style="padding-top: 3%;">
+						<ion-badge color="secondary" id="profile-badge-active">
+							active
+						</ion-badge>
+					</ion-col>
+				</ion-row>
+			</ion-item>
+			<ion-item id="profile-row">
+				<ion-row>
+					<ion-col col-2>
+						<img src="../assets/imgs/sofort.png" />
+					</ion-col>
+					<ion-col col-4>
+						SOFORT
+					</ion-col>
+					<ion-col col-6 text-right>
+						<ion-badge color="danger" id="profile-badge-inactive">
+							inactive
+						</ion-badge>
+					</ion-col>
+				</ion-row>
+			</ion-item>
+		</ion-grid>
+</ion-content>

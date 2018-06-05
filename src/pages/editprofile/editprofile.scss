@@ -1,0 +1,14 @@
+page-editprofile {
+	#edit-profile-content {
+		background-color: color($colors, dark);
+	}
+	#profile-row {
+		color: color($colors, light);
+		padding: 5%;
+	}
+	#profile-avatar {
+		background-color: color($colors, light);
+		border-radius: 50%;
+		padding: 10%;
+	}
+}

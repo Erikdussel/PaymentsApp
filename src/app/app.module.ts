@@ -4,7 +4,15 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { WelcomePage } from '../pages/welcome/welcome';
+import { LoginPage } from '../pages/login/login';
+import { SignupPage } from '../pages/signup/signup';
+
+import { ProfilePage } from '../pages/profile/profile';
+import { TransactionsPage } from '../pages/transactions/transactions';
+import { ResellersPage } from '../pages/resellers/resellers';
+import { QrCodePage } from '../pages/qr-code/qr-code';
+import { GeneratedQrPage } from '../pages/generated-qr/generated-qr';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -13,7 +21,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    WelcomePage,
+    LoginPage,
+    SignupPage,
+    ProfilePage,
+    TransactionsPage,
+    ResellersPage,
+    QrCodePage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +37,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    WelcomePage,
+    LoginPage,
+    SignupPage,
+    ProfilePage,
+    TransactionsPage,
+    ResellersPage,
+    QrCodePage
   ],
   providers: [
     StatusBar,
@@ -31,4 +51,5 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
+
 export class AppModule {}

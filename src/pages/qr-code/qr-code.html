@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title item-center>PAYMENT LINK</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content id="qr-content" padding>
+		<ion-row>
+			<ion-col center text-center>
+			</ion-col>
+		</ion-row>
+		<ion-row id="qr-row">
+			<ion-col center>
+				<ion-label text-center>AMOUNT:</ion-label>
+				<ion-input id="qr-input" type="number" placeholder="€xx,xx"></ion-input>
+			</ion-col>
+		</ion-row>
+		<ion-row id="qr-row">
+				<ion-col center>
+					<ion-label text-center>DESCRIPTION:</ion-label>
+					<ion-input id="qr-input" type="text" placeholder="description"></ion-input>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+			</ion-row>
+			<ion-row>
+				<ion-col center text-center>
+					<button ion-button full color="primary" (click)="createLink()">CREATE PAYMENT LINK</button>
+				</ion-col>
+			</ion-row>
+</ion-content>

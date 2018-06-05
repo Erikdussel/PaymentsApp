@@ -1,0 +1,44 @@
+page-profile {
+
+	#profile-avatar {
+		background-color: color($colors, light);
+		border-radius: 50%;
+		padding: 10%;
+	}
+	#payment-methods {
+		background-color: color($colors, dark);
+		margin-top: 5vh;
+		margin-bottom: 5vh;
+	}
+	#profile-badge-active {
+		padding: 0.5vh 3vh 0.5vh 3vh;
+	}
+	#profile-badge-inactive {
+		padding: 0.5vh 2.5vh 0.5vh 2.5vh;
+	}
+	#payment-methods-container {
+
+	}
+
+	#profile-background-image {
+		background-color: color($colors, dark);
+		color: color($colors, primary);
+	}
+
+	#profile-row {
+		background-color: color($colors, dark);
+		color: color($colors, light);
+		padding: 5%;
+	}
+	#payment-icon img {
+		height: 100%;
+		width: 32px;
+	}
+
+	#saldo {
+		background: color($colors, dark);
+		color: color($colors, primary);
+
+	}
+
+}

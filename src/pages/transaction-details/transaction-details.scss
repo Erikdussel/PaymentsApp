@@ -1,0 +1,12 @@
+page-transaction-details {
+	#transaction-details-background {
+		background-color: color($colors, dark);
+		color: color($colors, light);
+	}
+	#icon-row {
+		margin-bottom: 10vh;
+	}
+	#icon {
+		color: color($colors, primary);
+	}
+}

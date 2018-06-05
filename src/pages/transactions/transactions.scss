@@ -1,0 +1,22 @@
+page-transactions {
+	#transactions-header {
+		background: color($colors, primary);
+		color: white;
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+	#transactions-row {
+		background-color: color($colors, light);
+		padding-top: 8vh;
+		padding-bottom: 8vh;
+	}
+	#transactions-background-image {
+		background-color: color($colors, dark);
+	}
+
+	#transactions-content {
+		background-color: color($colors, dark);
+
+	}
+
+}

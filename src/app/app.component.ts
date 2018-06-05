@@ -4,7 +4,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { WelcomePage } from '../pages/welcome/welcome';
+import { ProfilePage } from '../pages/profile/profile';
+import { TransactionsPage } from '../pages/transactions/transactions';
+import { ResellersPage } from '../pages/resellers/resellers';
+import { QrCodePage } from '../pages/qr-code/qr-code';
 
 @Component({
   templateUrl: 'app.html'
@@ -12,17 +16,19 @@ import { ListPage } from '../pages/list/list';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = WelcomePage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any, icon: string}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
-
-    // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'Home', component: HomePage, icon: 'home'},
+      { title: 'Profile', component: ProfilePage, icon: 'person'},
+      { title: 'Transactions', component: TransactionsPage, icon: 'swap'},
+      { title: 'Resellers', component: ResellersPage, icon: 'people'},
+      { title: 'QR-Code', component: QrCodePage, icon: 'image'}
+
     ];
 
   }
@@ -41,4 +47,10 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
   }
+
+  logout() {
+    this.nav.setRoot(WelcomePage);
+  }
+
+
 }
